@@ -1,0 +1,223 @@
+
+body {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    margin: 0;
+    font-family: arial;
+}
+
+#PropsBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 30px;
+    height: 30px;
+}
+
+#PropsContainer {
+
+}
+
+#ProjectionSelector {
+    margin: 1px 0 0 0;
+    vertical-align: top;
+}
+
+#EditorControls {
+    display: inline-block;
+}
+
+.ToolProps {
+    display: inline-block;
+    color: #fff;
+}
+
+.ToolProps select {
+    margin: -1px 5px 0;
+}
+
+.ToolProps label {
+    margin: 0 0 0 7px;
+}
+
+#ToolBar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+}
+
+.ToolButton {
+    display: block;
+    width: 24px;
+    height: 25px;
+    margin: 2px 3px 3px 2px;
+    padding: 0;
+}
+
+#EditorWindow {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    bottom: 0;
+    left: 30px;
+    background-color: #170529;
+}
+
+#RulerLeft {
+    position: absolute;
+    top: 0;
+    bottom: 25px;
+    left: 0;
+    width: 25px;
+    background-color: #fff;
+}
+
+#RulerBottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 25px;
+    height: 25px;
+    background-color: #fff;
+}
+
+#RulerCorner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #333;
+}
+
+#FlatViewer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 25px;
+    left: 25px;
+}
+
+#FlatEditor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#RulerLeft canvas, #RulerBottom canvas, #FlatViewer canvas, #FlatEditor canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#FlatEditorToolCanvas {
+    width: calc(100% - 25px) !important;
+    height: calc(100% - 25px) !important;
+    right: 0;
+}
+
+#Scratch {
+    position: fixed;
+    right: -5000px;
+    visibility: hidden;
+}
+
+#NewProjection {
+    background-color: #346d20;
+}
+
+#Drawer {
+    position: fixed;
+    top: 30px;
+    right: -270px;
+    bottom: 0;
+    width: 300px;
+}
+
+.drawerOpen #Drawer {
+    right: 0;
+}
+
+.drawerOpen #EditorWindow {
+    right: 300px;
+}
+
+.drawerTitle {
+    position: absolute;
+    top: 0px;
+    left: 34px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #f0a;
+}
+
+.DrawerSection > .button {
+    width: 14px;
+    height: 21px;
+    margin: 0 0 3px 2px;
+}
+
+#DrawerBottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.DrawerSection {
+    position: relative;
+}
+
+.DrawerSection .open {
+    height: 250px;
+    background-color: #4c4c4c;
+}
+
+#FragDrawer {
+    /*height: 350px;*/
+}
+
+#FragQuickSelectCanvas {
+    position: absolute;
+    top: 28px;
+    bottom: 0;
+    left: 0;
+}
+
+.drawerContainer {
+    margin: 0 0 7px 32px;
+    display: none;
+}
+
+.drawerContainer:last-child {
+    margin-bottom: 0;
+}
+
+.active .drawerContainer, .always .drawerContainer {
+    display: block;
+}
+
+#FragList {
+    /*position: absolute;*/
+    height: 325px;
+    /*top: 30px;
+    right: 3px;
+    bottom: 31px;
+    left: 32px;*/
+    background-color: #464646;
+}
+
+#FragButtonContainer {
+    /*position: absolute;
+    right: 2px;
+    bottom: 0;
+    left: 34px;*/
+}

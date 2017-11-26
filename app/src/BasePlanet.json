@@ -1,0 +1,19 @@
+{
+    "title":        "Untitled Planet",
+    "resolution":   800,
+    "radius":       6371000,
+    "defaultProjection": 1,
+    "projections":  [
+        {
+            "title":    "Default",
+            "north":    [ -180, -90, 0, 90, 180 ],
+            "south":    [ -180, -69.75, 0, 69.75, 180 ]
+        },
+        {
+            "title":    "Raw",
+            "north":    [ -180, 0, 180 ],
+            "south":    [ -180, 0, 180 ]
+        }
+    ],
+    "base":         {}
+}

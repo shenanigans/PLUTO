@@ -1,0 +1,145 @@
+{
+    "commands":     {
+        "accept":       {
+            "flag":         "accept",
+            "type":         "event",
+            "trigger":      [
+                { "key":"Enter" }
+            ]
+        },
+        "cancel":       {
+            "flag":         "cancel",
+            "type":         "event",
+            "trigger":      [
+                { "key":"Escape" }
+            ]
+        },
+        "move view":    {
+            "flag":         "frame",
+            "type":         "drag",
+            "trigger":      [
+                { "key":"MMB" },
+                { "key":"LMB", "modifiers":[ "SPACE" ] }
+            ]
+        },
+        "measure from center": {
+            "flag":         "center",
+            "type":         "hold",
+            "trigger":      [
+                { "key":"ALT" }
+            ]
+        },
+        "proportional": {
+            "flag":         "proportional",
+            "type":         "hold",
+            "trigger":      [
+                { "key":"SHIFT" }
+            ]
+        },
+        "fly down":     {
+            "flag":         "altitude_up",
+            "type":         "event",
+            "trigger":      [
+                { "key":"WHEELUP" }
+            ]
+        },
+        "fly up":       {
+            "flag":         "altitude_down",
+            "type":         "event",
+            "trigger":      [
+                { "key":"WHEELDOWN" }
+            ]
+        },
+        "zoom in":      {
+            "flag":         "zoom_up",
+            "type":         "event",
+            "trigger":      [
+                { "key":"WHEELUP", "modifiers":[ "SHIFT" ] }
+            ]
+        },
+        "zoom out": {
+            "flag":         "zoom_down",
+            "type":         "event",
+            "trigger":      [
+                { "key":"WHEELDOWN", "modifiers":[ "SHIFT" ] }
+            ]
+        },
+        "brush size up": {
+            "flag":         "brush_up",
+            "type":         "event",
+            "trigger":      [
+                { "key":"WHEELUP", "modifiers":[ "CONTROL" ] }
+            ]
+        },
+        "brush size down": {
+            "flag":         "brush_down",
+            "type":         "event",
+            "trigger":      [
+                { "key":"WHEELDOWN", "modifiers":[ "CONTROL" ] }
+            ]
+        },
+        "undo":     {
+            "flag":         "undo",
+            "type":         "event",
+            "trigger":      [
+                { "key":"z", "modifiers":[ "CONTROL" ] }
+            ]
+        }
+    },
+    "tools":        {
+        "projection":   {
+            "title":        "Projection Editor",
+            "trigger":      [
+                { "key":"p" }
+            ]
+        }
+    },
+    "styles":       {
+        "defaultScheme":0,
+        "palette":      {
+            "recent":       [],
+            "saved":        []
+        },
+        "schemes":      [
+            {
+                "title":    "default",
+                "global":   {
+                    "window":   {
+                        "background":   "#333"
+                    },
+                    "text":     {
+                        "normal":   {
+                            "font":     "16px arial",
+                            "color":    "#000"
+                        },
+                        "rulers":   {
+                            "font":     "11px palatino",
+                            "color":    "#000",
+                            "highlight":{
+                                "font":     "12px palatino",
+                                "color":    "#000"
+                            }
+                        }
+                    }
+                },
+                "editor":   {
+                    "cardinals":    {
+                        "north":        "#ffd6d6",
+                        "south":        "#d6e1ff",
+                        "east":         "#d6ffdc",
+                        "west":         "#ffffd6"
+                    },
+                    "cursor":       "#55f",
+                    "background":   "#170529",
+                    "rulerBG":      "#666",
+                    "rulerMarks":   "#aaa",
+                    "tools":        {
+                        "normal":       "#f00",
+                        "highlight":    "#fa3",
+                        "overrides":    []
+                    }
+                }
+            }
+        ]
+    }
+}

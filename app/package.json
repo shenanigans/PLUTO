@@ -1,0 +1,8 @@
+{
+  "name": "PLUTO_client",
+  "main": "src/index.html",
+  "version": "0.0.1",
+  "dependencies": {
+    "scum": "0.0.1"
+  }
+}

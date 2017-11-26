@@ -1,0 +1,5 @@
+{
+    "name":     "shaders",
+    "main":     "index.js",
+    "browser":  "browser.js"
+}

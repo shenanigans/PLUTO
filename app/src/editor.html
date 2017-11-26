@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PLUTO editor</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="editor.css" />
+</head>
+<body>
+    <div id="Editor">
+        <div id="EditorWindow">
+            <div id="RulerLeft">
+                <canvas id="LatRulerCanvas"></canvas>
+            </div>
+            <div id="RulerBottom">
+                <canvas id="LngRulerCanvas"></canvas>
+            </div>
+            <div id="RulerCorner"></div>
+            <div id="FlatViewer">
+                <canvas id="FlatViewerCanvas"></canvas>
+            </div>
+            <div id="FlatEditor">
+                <canvas id="FlatEditorToolCanvas"></canvas>
+                <canvas id="FlatEditorCursorCanvas" style="cursor:url(img/cursor_precision.png) 7 7, auto;"></canvas>
+            </div>
+            <div id="Scratch"></div>
+        </div>
+        <div id="ToolBar">
+            <div id="tool_projection" class="ToolButton">
+
+            </div>
+            <div id="tool_devbrush" class="ToolButton">
+
+            </div>
+        </div>
+        <div id="PropsBar">
+            <div id="PropsContainer">
+                <select id="ProjectionSelector">
+                    <option id="NewProjection">New Projection</option>
+                </select>
+                <div id="EditorControls" class="ToolProps"></div>
+            </div>
+        </div>
+        <div id="Drawer">
+            <div id="ViewDrawer" class="DrawerSection">
+                <div class="button">
+
+                </div>
+                <div class="drawerTitle">View Options</div>
+                <div class="drawerContainer" id="ViewerSettings">
+                    <div id="SeaLevelSettings"></div>
+                    <select>
+                        <option>grayscale</option>
+                        <option>topographic</option>
+                        <option>psychadelic</option>
+                        <option>raw</option>
+                    </select>
+                </div>
+            </div>
+            <div id="PlanetDrawer" class="DrawerSection">
+                <div class="button">
+
+                </div>
+                <div class="drawerTitle"><div class="keepOpen"></div>Planet Settings</div>
+                <div class="drawerContainer"></div>
+            </div>
+            <div id="PlacesDrawer" class="DrawerSection">
+                <div class="button">
+
+                </div>
+                <div class="drawerTitle">Locations and Regions</div>
+                <div class="drawerContainer"></div>
+            </div>
+            <div id="DrawerBottom">
+                <div id="FragDrawer" class="DrawerSection always">
+                    <div class="button">
+
+                    </div>
+                    <div class="drawerTitle">Terrain Fragments</div>
+                    <canvas id="FragQuickSelectCanvas"></canvas>
+                    <div class="drawerContainer">
+                        <div id="FragList"></div>
+                        <div id="FragButtonContainer"></div>
+                    </div>
+                </div>
+                <div id="LayersDrawer" class="DrawerSection">
+                    <div class="button">
+
+                    </div>
+                    <div class="drawerTitle">Layers</div>
+                    <div class="drawerContainer">
+                        <div id="LayersList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
