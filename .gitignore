@@ -1,3 +1,9 @@
+# Node.js stuff
+/app/node_modules
+/app/nw
+/server/node_modules
+npm-debug.log
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
